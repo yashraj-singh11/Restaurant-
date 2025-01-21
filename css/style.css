@@ -1,0 +1,56 @@
+.container-xxl {
+    width: 100%;
+}
+.container-xx {
+    height: 400px;
+    width: 100%;
+    background: rgba(245, 245, 245, 0);
+   }
+
+.container {
+    margin-top: 1%;
+}
+
+.container .service-item {
+    background:whitesmoke;
+}
+
+.container .service-item:hover .icon{
+    color: white !important;
+}
+.container-xl{
+    background: #F1F8FF;
+}
+ .team-item {
+    background: white;
+}
+.service-item{
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.overlay{
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: orange; 
+    z-index: -4;    
+}
+.service-item:hover .overlay{
+    top: 0px;
+    transition: 1s ease;
+}
+@keyframes ram{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.abhi img{
+    animation:ram 19s linear 7ms infinite normal;
+}
+
